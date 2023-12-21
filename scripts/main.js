@@ -1,3 +1,14 @@
+    /** Types.js */
+function typedjs() { 
+  var typed = new Typed('#typed', {
+      strings: ['College Student.', '^1000Beginner FE Developer.', '^1000'],
+      typeSpeed: 100,
+      loop: true,
+      loopCount: Infinity,
+      backDelay: 2000,
+  });
+}
+typedjs()
 
     /** ISOTOPE FILTERING */
 $(window).on('load', function () {
@@ -49,15 +60,27 @@ function postToGoogle() {
     return false;
 }
 
-    /** Nav active */
+    /** Nav and scroll-to-top active */
 const navActivate = () => {
-  if (window.scrollY > 200) {
+  if (window.scrollY > 100) {
     $("#navbar").addClass("nav-active");
     $("#navbar").css("position", "fixed");
+    $(".back-to-top").addClass("active");
   } else {
     $("#navbar").removeClass("nav-active");
     $("#navbar").css("position", "absolute");
+    $(".back-to-top").removeClass("active");
   }
 };
 $(window).on('load', navActivate);
 $(document).on('scroll', navActivate);
+
+  /** Scroll to top */
+$(".back-to-top").click(function () { 
+  $(window).scrollTop(0);
+});
+
+  /** AOS */
+$(window).on('load', function () {
+  AOS.refresh();
+});
