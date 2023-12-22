@@ -75,12 +75,20 @@ const navActivate = () => {
 $(window).on('load', navActivate);
 $(document).on('scroll', navActivate);
 
-  /** Scroll to top */
+    /** Scroll to top */
 $(".back-to-top").click(function () { 
   $(window).scrollTop(0);
 });
 
-  /** AOS */
+    /** AOS */
 $(window).on('load', function () {
   AOS.refresh();
 });
+
+    /** GLightbox */
+const projectDetail = GLightbox({
+  selector: '.project-detail',
+  width: '85%',
+  height: '85vh',
+  loop: false
+})
