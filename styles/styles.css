@@ -285,6 +285,7 @@ section {
     transition: all ease-in-out 0.3s;
     background-color: rgba(255, 255, 255, 0.6);
 }
+.project-info:hover {opacity: 1;}
 
 /* Contact */
 .info { width: 100%; }
@@ -316,8 +317,6 @@ section {
 }
 .info .phone,
 .info .email { margin-top: 30px ;}
-
-.project-info:hover {opacity: 1;}
 
 .form-group {
     margin-top: 0.5rem;
