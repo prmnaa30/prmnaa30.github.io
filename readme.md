@@ -1,5 +1,5 @@
 
-# My Portfolio Webside
+# My Portfolio Website
 Created to fulfill the submission task at the fifth week of INSTIKI Developer Club meeting.
 
 Might be useful in the future :D
